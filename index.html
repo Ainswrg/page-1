@@ -11,21 +11,11 @@
     <script>
         const frame = document.getElementById("frame");
 
-        frame.onload = function() {
-            if (frame.contentWindow.localStorage) {
-                console.log("localStorage доступен");
-            } else {
-                console.log("localStorage недоступен");
-            }
-        };
-
         const key = "test_key1";
-        const value = "test_value";
+        const value = "test_value1";
         localStorage.setItem(key, value);
 
-        const storedValue = localStorage.getItem(key);
-        console.log("Значение из localStorage1: ", storedValue);
     </script>
-    
+
 </body>
 </html>
